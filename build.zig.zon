@@ -1,0 +1,25 @@
+.{
+    .name = .zap_redis,
+
+    .version = "0.0.0",
+
+    .fingerprint = 0x3372b0c32b722792,
+
+    .minimum_zig_version = "0.14.0",
+
+    .dependencies = .{
+        .okredis = .{
+            .url = "git+https://github.com/kristoff-it/zig-okredis?ref=HEAD#2e528f3294c9ec4b1e43bf0fb1597711d2541608",
+            .hash = "okredis-0.0.0-Cg726iYYBACjBTnrgP5ZQlkNXh8IM7rYGwLUHz8OQj__",
+        },
+        .zap = .{
+            .url = "git+https://github.com/zigzap/zap.git?ref=HEAD#3b06a336ef27e5ffe04075109d67e309b83a337a",
+            .hash = "zap-0.9.1-GoeB856uIwDAc9I-e5Pp83lKXBIhSXAiB8Cd5NYoP0D7",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
